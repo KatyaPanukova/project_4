@@ -1,16 +1,16 @@
-print('Привет ,данная программа ничего полезного не несет,'
-      'она создана ради развлечения.')
-print('Мы предлагаем указать, чем бы вы хотели рисовать.')
+import local as lc
+
+print(lc.TXT_1)
+print(lc.TXT_2)
 
 list_1 = input()
 
-print('Что бы вы хотели бы нарисовать для начала'
-      ' введенным символом?')
-print('- Человека \n- Квадрат \n- Без разницы')
+print(lc.TXT_3)
+print(lc.TXT_4, '\n', lc.TXT_5, '\n', lc.TXT_6)
 
 answer = input()
 
-if answer == 'Без разницы':
+if answer == lc.TXT_6:
 
     ot = ' '
     list_1 *= 10
@@ -51,9 +51,9 @@ if answer == 'Без разницы':
     a += 1
     kol +=1
     print(ot, lis_1)
-    answer_2 = input('Хотели бы вы ,чтобы ваш рисунок ожил?\n')
+    answer_2 = input(lc.TXT_7, '\n')
 
-elif answer == 'Человека':
+elif answer == lc.TXT_4:
 
     ot = ' '
     b = 1
@@ -99,9 +99,9 @@ elif answer == 'Человека':
 
         print(ot * 5, lis_1[0], ot * 2, lis_1[0])
 
-    answer_2 = input('Хотели бы вы ,чтобы ваш рисунок ожил?\n')
+    answer_2 = input(lc.TXT_7, '\n')
 
-elif answer == 'Квадрат':
+elif answer == lc.TXT_5:
 
     ot = ' '
     lis_1 = list_1[0]
@@ -121,4 +121,6 @@ elif answer == 'Квадрат':
 
                 print(ot * 5, lis_1)
 
-    answer_2 = input('Хотели бы вы ,чтобы ваш рисунок ожил?\n')
+    answer_2 = input(lc.TXT_7, '\n')
+else:
+    print(lc.TXT_8)
