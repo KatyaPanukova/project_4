@@ -183,6 +183,8 @@ elif answer_2 == lc.TXT_7:                      # If the entered data is not equ
 
                     print(ot, list_1[0], ot, lis_1, ot, list_1[0])
 
+    print()
+
     for i in range(1, 5):
 
         print(ot * 5, lis_1[0], ot * 2, lis_1[0])
