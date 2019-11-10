@@ -26,6 +26,7 @@ if answer_2 != lc.TXT_7:                         # If the entered data is not eq
         if answer_2 != lc.TXT_7:                 # If the entered data is not equal to the answer.
 
             print(lc.TXT_9, num - 1)
+            print(lc.TXT_0)
             print(lc.TXT_17, result[x])
             answer_2 = input(lc.TXT_6,)
 
@@ -191,8 +192,10 @@ elif answer_2 == lc.TXT_7:                      # If the entered data is not equ
 
     for seconds in range(3):                    # Cycle simulating time change in seconds.
         if seconds == 0:
+
             print(lc.TXT_8)
         elif seconds == 1:
+
             print(lc.TXT_20)
         elif seconds == 2:
             print(lc.TXT_19)
